@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="proyecto.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;1,100&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+   
+     body,h1,h2,h3,h4,h5,h6,p,article,section,div,footer,ul,li,table,th,tr {font-family: 'Barlow Condensed', sans-serif;}
+     body, html {
+       height: 100%;
+       color:black;
+       line-height: 1.8;
+     }
+ 
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+lo a:hover {
+   background-color:green;
+ }
+</style>
+</head>
+<body>
+  <lo>
+  <a href="home.html">VOLVER</a>
+</lo>
+<div class="container">
+  <div style="text-align:left">
+    <h2>QUEREMOS SABER QUE OPINÁS</h2>
+    <p>Para consultas cliente/proveedor y mejora contínua </p>
+
+  </div>
+  <article>
+  <div class="row">
+    <div class="column">
+      <img src="img/piñon.jpg.jpg" style="width:100%">
+      <p>Somos fabricantes desde el año 1995 y desde entonces estamos abiertos ante tus ideas,te leemos !</p>
+     <cite> <p>•°Andar en bici es alegría <br>
+
+        Para correr como el viento <br>
+        
+        ligero como cometa <br>
+        
+        tengo una amiga en el patio: <br>
+        
+        mi querida bicicleta°•</p> </cite>
+    </div>
+    
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="mail">Mail</label>
+        <input type="text" id="fname" name="firstname" placeholder="Dejá tu email">
+        <label for="lname">Tu nombre</label>
+        <input type="text" id="lname" name="lastname" placeholder="Tu nombre">
+        <label for="Motivo consulta">Motivo consulta</label>
+        <select id="Motivo xonsulta" name="Motivo consulta">
+          <option value="asistencia">Asistencia</option>
+          <option value="soy proveedor">Soy proveedor</option>
+          <option value="postulaciones">POSTULACIONES</option>
+        </select>
+        <label for="subject"></label>
+        <textarea id="subject" name="subject" placeholder="Escribe tu consulta.." style="height:170px"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </article>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
